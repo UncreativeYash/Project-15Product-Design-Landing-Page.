@@ -29,6 +29,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .bg-red {
@@ -71,7 +72,7 @@ nav ul {
 }
 
 .intro-left {
-    width: 50vw;
+    width: 40vw;
 }
 
 .intro-right {
@@ -93,15 +94,15 @@ nav ul {
 
 
 .service-cards {
-    height: 40vh;
+    height: 100%;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .card-item {
     padding: 30px;
     height: 100%;
-    width: 100%;
+    /* width: 300px; */
     background-color: #1f1f1e;
     max-width: 32%;
    
@@ -121,6 +122,7 @@ nav ul {
     width: 100%;
     margin-top: 40px;
     height: 45vh;
+
 }
 
 .left-stats {
@@ -159,16 +161,18 @@ nav ul {
 /* feature intro */
 
 
+
 /* feature project */
 
 .featured-projects {
     gap: 20px;
     flex-wrap: wrap;
+    text-align: center;
 }
 .feature-posts {
     /* background-color: #c91a29; */
-    width: 41vw;
-    height: 40vh;
+    width: 400px;
+    height: 320px;
 
 }
 
@@ -183,7 +187,6 @@ nav ul {
 
 .img-bg img{
     width: 80%;
-    height: 80%;
     object-fit: cover;
 
 }
@@ -193,7 +196,6 @@ nav ul {
     margin: 60px 60px;
     background-color: #181919;
     padding: 40px 20px;
-    height: 40vh;
 }
 
 .left-outro {
@@ -235,4 +237,72 @@ footer {
     justify-content: flex-start;
     gap: 20px;
 
+}
+
+
+@media screen and (max-width:768px) {
+
+    .intro-left {
+        width: 80%;
+    }
+    
+    .intro-right {
+        margin-top: 100px;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .service-cards {
+        justify-content: space-evenly;
+        gap: 40px;
+    }
+
+    .card-item {
+        max-width: 280px;
+    }
+
+    .left-stats {
+        text-align: center;
+        width: 200px ;
+    }
+
+    .right-stats {
+        width: auto;
+    }
+
+    .service-stats {
+        height: auto;
+        justify-content: space-around;
+    }
+
+   
+
+    .featured-projects {
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-posts {
+        width: 100%;
+        height: 40vh;
+    
+    }
+
+    .outro-message {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-outro {
+        width: 100%;
+    }
+
+    .img-bg {
+        height: auto;
+    }
+    .img-bg img{
+        width: 80%;
+        object-fit: cover;
+    
+    }
 }
